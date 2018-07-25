@@ -1,0 +1,31 @@
+{
+    "name": "maxam",
+    "displayName": "Maxam Z80",
+    "description": "Syntax highlighting for Maxam Z80 assembler",
+    "version": "0.0.1",
+    "publisher": "borilla",
+    "engines": {
+        "vscode": "^1.21.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "maxam",
+            "aliases": ["maxam", "z80"],
+            "extensions": [".asm", ".z80"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "maxam",
+            "scopeName": "source.maxam",
+            "path": "./syntaxes/maxam.tmLanguage"
+        }],
+        "themes": [{
+            "label": "Maxam Z80",
+            "uiTheme": "vs-dark",
+            "path": "./syntaxes/maxam.tmTheme"
+        }]
+    }
+}
